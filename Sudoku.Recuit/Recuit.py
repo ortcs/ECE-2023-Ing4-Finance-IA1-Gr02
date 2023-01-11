@@ -8,5 +8,6 @@ namespace Sudoku.Recuit
 {
     class Recuit
     {
+        print("Hello AL,CC,OT")
     }
 }
