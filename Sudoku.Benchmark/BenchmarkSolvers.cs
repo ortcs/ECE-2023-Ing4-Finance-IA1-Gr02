@@ -11,6 +11,8 @@ using BenchmarkDotNet.Mathematics;
 using BenchmarkDotNet.Order;
 using Sudoku.Shared;
 
+int a;
+
 namespace Sudoku.Benchmark
 {
 
