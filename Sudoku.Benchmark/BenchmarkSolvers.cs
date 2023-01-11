@@ -10,8 +10,7 @@ using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Mathematics;
 using BenchmarkDotNet.Order;
 using Sudoku.Shared;
-    
-e
+
 
 namespace Sudoku.Benchmark
 {
