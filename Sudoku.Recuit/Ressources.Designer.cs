@@ -53,7 +53,7 @@ namespace Sudoku.Recuit {
             }
         }
         
-        internal static string Z3Solver_py {
+        internal static string RecuitSolver_py {
             get {
                 return ResourceManager.GetString("RecuitSolver.py", resourceCulture);
             }
