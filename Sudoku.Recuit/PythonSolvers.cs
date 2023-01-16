@@ -33,7 +33,7 @@ namespace Sudoku.Recuit
                 scope.Set("sudoku", pySudoku);
 
                 // the person object may now be used in Python
-                string code = Resources.SelfCallSolver_py;
+                string code = Ressources.SelfCallSolver_py;
                 scope.Exec(code);
                 var result = scope.Get("solvedSudoku");
                 var toReturn = result.As<Shared.SudokuGrid>();
@@ -64,7 +64,7 @@ namespace Sudoku.Recuit
                 scope.Set("instance", pyCells);
 
                 // the person object may now be used in Python
-                string code = Resources.RecuitSolver_py;
+                string code = Ressources.RecuitSolver_py;
                 scope.Exec(code);
                 var result = scope.Get("r");
                 var managedResult = result.As<int[][]>();
