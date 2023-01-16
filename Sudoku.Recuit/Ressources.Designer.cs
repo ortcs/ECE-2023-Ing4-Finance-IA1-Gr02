@@ -65,7 +65,7 @@ namespace Sudoku.Recuit {
         /// </summary>
         internal static byte[] RecuitSolver {
             get {
-                object obj = ResourceManager.GetObject("RecuitSolver", resourceCulture);
+                object obj = ResourceManager.GetObject("RecuitSolver.py", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace Sudoku.Recuit {
         /// </summary>
         internal static byte[] SelfCallSolver {
             get {
-                object obj = ResourceManager.GetObject("SelfCallSolver", resourceCulture);
+                object obj = ResourceManager.GetObject("SelfCallSolver.py", resourceCulture);
                 return ((byte[])(obj));
             }
         }
