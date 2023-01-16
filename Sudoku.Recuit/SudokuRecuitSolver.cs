@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sudoku.Recuit
 {
-    public class EmptySolverRecuit : ISudokuSolver
+    public class SudokuRecuitSolver : ISudokuSolver
     {
         public SudokuGrid Solve(SudokuGrid s)
         {
