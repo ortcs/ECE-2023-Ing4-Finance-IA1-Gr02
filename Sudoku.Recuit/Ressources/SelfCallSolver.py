@@ -1,6 +1,6 @@
 import clr
 clr.AddReference("Sudoku.Shared")
-clr.AddReference("Sudoku.RecuitSolver")
-from Sudoku.Z3Solvers import Z3SubstitutionsSolver
-netSolver = Z3SubstitutionsSolver()
+clr.AddReference("Sudoku.SodukuRecuitSolver")
+from Sudoku.RecuitSolver import RecuitSubstitutionsSolver
+netSolver = RecuitSubstitutionsSolver()
 solvedSudoku = netSolver.Solve(sudoku)
