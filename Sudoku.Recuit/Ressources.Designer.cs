@@ -10,6 +10,7 @@
 
 namespace Sudoku.Recuit {
     using System;
+    using System.Reflection;
     
     
     /// <summary>
@@ -31,7 +32,10 @@ namespace Sudoku.Recuit {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Ressources() {
         }
-        
+
+        public static string SelfCallSolver_py { get; internal set; }
+        public static string RecuitSolver_py { get; internal set; }
+
         /// <summary>
         ///   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
         /// </summary>
