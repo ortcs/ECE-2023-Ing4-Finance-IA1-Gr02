@@ -13,5 +13,7 @@
     <ProjectReference Include="..\Sudoku.Z3Solvers\Sudoku.Z3Solvers.csproj" />
     <ProjectReference Include="..\Sudoku.DlxLib\Sudoku.DlxLib.csproj" />
     <ProjectReference Include="..\Sudoku.Genetic\Sudoku.Genetic.csproj" />
+    <ProjectReference Include="..\Sudoku.TechniquesHumaines\Sudoku.TechniquesHumaines.csproj" />
+
   </ItemGroup>
 </Project>

@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.DlxLib", "Sudoku.Dlx
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Allister", "Sudoku.Allister\Sudoku.Allister.csproj", "{EB5159E5-E946-41B7-9648-2AE9777BB4FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.TechniquesHumaines", "Sudoku.TechniquesHumaines\Sudoku.TechniquesHumaines.csproj", "{B8901C62-8B31-47FE-9827-98B8C320D10E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{EB5159E5-E946-41B7-9648-2AE9777BB4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB5159E5-E946-41B7-9648-2AE9777BB4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB5159E5-E946-41B7-9648-2AE9777BB4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8901C62-8B31-47FE-9827-98B8C320D10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8901C62-8B31-47FE-9827-98B8C320D10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8901C62-8B31-47FE-9827-98B8C320D10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8901C62-8B31-47FE-9827-98B8C320D10E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
