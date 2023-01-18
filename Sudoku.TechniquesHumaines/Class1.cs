@@ -1,4 +1,6 @@
-﻿namespace Sudoku.TechniquesHumaines;
+﻿using Sudoku.Shared;
+
+namespace Sudoku.TechniquesHumaines
 {
     public class EmptySolver : ISudokuSolver
     {

@@ -10,8 +10,4 @@
     <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Sudoku.Benchmark\Sudoku.Benchmark.csproj" />
-  </ItemGroup>
-
 </Project>
