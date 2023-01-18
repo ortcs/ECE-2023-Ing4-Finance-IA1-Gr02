@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Columns;
 using BenchmarkDotNet.Configs;
@@ -12,7 +11,6 @@ using BenchmarkDotNet.Mathematics;
 using BenchmarkDotNet.Order;
 using Sudoku.Shared;
 
-int a;
 
 namespace Sudoku.Benchmark
 {
