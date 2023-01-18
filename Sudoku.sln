@@ -22,7 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Recuit", "Sudoku.Rec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.DlxLib", "Sudoku.DlxLib\Sudoku.DlxLib.csproj", "{5C30C9A9-2011-415C-8733-B2BCF4D1CDEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Allister", "Sudoku.Allister\Sudoku.Allister.csproj", "{D16EA7D3-EEA7-45ED-A987-59B76CF41EE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Allister", "Sudoku.Allister\Sudoku.Allister.csproj", "{EB5159E5-E946-41B7-9648-2AE9777BB4FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,10 +54,10 @@ Global
 		{5C30C9A9-2011-415C-8733-B2BCF4D1CDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C30C9A9-2011-415C-8733-B2BCF4D1CDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C30C9A9-2011-415C-8733-B2BCF4D1CDEC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D16EA7D3-EEA7-45ED-A987-59B76CF41EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D16EA7D3-EEA7-45ED-A987-59B76CF41EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D16EA7D3-EEA7-45ED-A987-59B76CF41EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D16EA7D3-EEA7-45ED-A987-59B76CF41EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB5159E5-E946-41B7-9648-2AE9777BB4FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5159E5-E946-41B7-9648-2AE9777BB4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5159E5-E946-41B7-9648-2AE9777BB4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5159E5-E946-41B7-9648-2AE9777BB4FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
