@@ -33,7 +33,7 @@ namespace Sudoku.Recuit
                 scope.Set("sudoku", pySudoku);
 
                 // the person object may now be used in Python
-                string code = Ressources.SelfCallSolver_py;
+                string code = Resources.SelfCallSolver_py;
                 scope.Exec(code);
                 var result = scope.Get("solvedSudoku");
                 var toReturn = result.As<Shared.SudokuGrid>();
@@ -63,12 +63,15 @@ namespace Sudoku.Recuit
                 // create a Python variable "person"
                 scope.Set("instance", pyCells);
 
-                // the person object may now be used in Python
-                string code = Ressources.RecuitSolver_py;
-                scope.Exec(code);
+
+				string numpyConverterCode = Resources.numpy_converter_py;
+				scope.Exec(numpyConverterCode);
+
+				string recuitSolverCode = Resources.RecuitSolver_py;
+                scope.Exec(recuitSolverCode);
                 var result = scope.Get("r");
-                var managedResult = result.As<int[][]>();
-                //var convertesdResult = managedResult.Select(objList => objList.Select(o => (int)o).ToArray()).ToArray();
+                var managedResult = result.As<int[,]>().ToJaggedArray();
+                //var convertedResult = managedResult.Select(objList => objList.Select(o => o.As<int>()).ToArray()).ToArray();
                 return new Shared.SudokuGrid() { Cells = managedResult };
             }
             //}
@@ -77,8 +80,9 @@ namespace Sudoku.Recuit
 
         protected override void InitializePythonComponents()
         {
-            InstallPipModule("recuit-solver");
-            base.InitializePythonComponents();
+			InstallPipModule("numpy");
+			//InstallPipModule("simanneal");
+			base.InitializePythonComponents();
         }
 
 

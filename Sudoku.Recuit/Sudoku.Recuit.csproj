@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="IronPython" Version="3.4.0" />
     <PackageReference Include="pythonnet" Version="3.0.1" />
   </ItemGroup>
 
@@ -16,16 +15,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Ressources.Designer.cs">
-      <DependentUpon>Ressources.resx</DependentUpon>
+    <Compile Update="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Ressources.resx">
-      <LastGenOutput>Ressources.Designer.cs</LastGenOutput>
+    <EmbeddedResource Update="Resources.resx">
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
   </ItemGroup>

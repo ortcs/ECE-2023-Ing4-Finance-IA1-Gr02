@@ -10,7 +10,6 @@
 
 namespace Sudoku.Recuit {
     using System;
-    using System.Reflection;
     
     
     /// <summary>
@@ -23,19 +22,16 @@ namespace Sudoku.Recuit {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Ressources {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Ressources() {
+        internal Resources() {
         }
-
-        public static string SelfCallSolver_py { get; internal set; }
-        public static string RecuitSolver_py { get; internal set; }
-
+        
         /// <summary>
         ///   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
         /// </summary>
@@ -43,7 +39,7 @@ namespace Sudoku.Recuit {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sudoku.Recuit.Ressources", typeof(Ressources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sudoku.Recuit.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -65,22 +61,71 @@ namespace Sudoku.Recuit {
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Byte[].
+        ///   Recherche une chaîne localisée semblable à import ctypes
+        ///
+        ///import numpy as np
+        ///
+        ///import clr 
+        ///import System
+        ///from System import Array, Int32
+        ///from System.Runtime.InteropServices import GCHandle, GCHandleType
+        ///
+        ///_MAP_NP_NET = {
+        ///    np.dtype(np.float32): System.Single,
+        ///    np.dtype(np.float64): System.Double,
+        ///    np.dtype(np.int8)   : System.SByte,
+        ///    np.dtype(np.int16)  : System.Int16,
+        ///    np.dtype(np.int32)  : System.Int32,
+        ///    np.dtype(np.int64)  : System.Int64,
+        ///    np.dtype(np.uint8)  : System.Byte,
+        ///    np.dtype(np.uint16) : System.UInt1 [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
-        internal static byte[] RecuitSolver {
+        internal static string numpy_converter_py {
             get {
-                object obj = ResourceManager.GetObject("RecuitSolver.py", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("numpy_converter.py", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Byte[].
+        ///   Recherche une chaîne localisée semblable à import random
+        ///import numpy as np
+        ///import math
+        ///from random import choice
+        ///import statistics
+        ///
+        ///
+        ///
+        ///# sudoku instance, we use &apos;0&apos; for empty cells
+        ///#instance = ((0,0,0,0,9,4,0,3,0),
+        ///#            (0,0,0,5,1,0,0,0,7),
+        ///#            (0,8,9,0,0,0,0,4,0),
+        ///#            (0,0,0,0,0,0,2,0,8),
+        ///#            (0,6,0,2,0,1,0,5,0),
+        ///#            (1,0,2,0,0,0,0,0,0),
+        ///#            (0,7,0,0,0,0,5,2,0),
+        ///#            (9,0,0,0,6,5,0,0,0),
+        ///#            (0,4,0,9,7,0,0,0,0))
+        ///
+        ///
+        ///#sudoku = np.array([[int(i) for i in line] for [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
-        internal static byte[] SelfCallSolver {
+        internal static string RecuitSolver_py {
             get {
-                object obj = ResourceManager.GetObject("SelfCallSolver.py", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("RecuitSolver.py", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à import clr
+        ///clr.AddReference(&quot;Sudoku.Shared&quot;)
+        ///clr.AddReference(&quot;Sudoku.Recuit&quot;)
+        ///from Sudoku.Recuit import SudokuRecuitSolver
+        ///netSolver = SudokuRecuitSolver()
+        ///solvedSudoku = netSolver.Solve(sudoku).
+        /// </summary>
+        internal static string SelfCallSolver_py {
+            get {
+                return ResourceManager.GetString("SelfCallSolver.py", resourceCulture);
             }
         }
     }
