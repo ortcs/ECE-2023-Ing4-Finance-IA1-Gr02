@@ -361,5 +361,20 @@ namespace Sudoku.Shared
             return NbErrors(originalPuzzle) == 0;
         }
 
+
+        public void setCaseSudoku(int y, int x, int nb)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void setSudoku(object value)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object getSudoku(object value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
