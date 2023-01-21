@@ -86,6 +86,7 @@ namespace Sudoku.Recuit {
             }
         }
         
+
         /// <summary>
         ///   Recherche une chaîne localisée semblable à import random
         ///import numpy as np
@@ -126,6 +127,13 @@ namespace Sudoku.Recuit {
         internal static string SelfCallSolver_py {
             get {
                 return ResourceManager.GetString("SelfCallSolver.py", resourceCulture);
+            }
+        }
+        internal static string SimannealSolver_py
+        {
+            get
+            {
+                return ResourceManager.GetString("SimannealSolver.py", resourceCulture);
             }
         }
     }
