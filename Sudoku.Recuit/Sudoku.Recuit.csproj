@@ -27,6 +27,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
+    <None Remove="Resources\SimannealSolver.py" />
+    <Compile Include="Resources\SimannealSolver.py" />
   </ItemGroup>
 
 </Project>

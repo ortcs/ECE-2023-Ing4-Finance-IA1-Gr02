@@ -83,25 +83,20 @@ class Sudoku_Sq(Annealer):
             self.user_exit = True # early quit, we found a solution
         return score
 
-def main():
-    sudoku = Sudoku_Sq(PROBLEM)
-    sudoku.copy_strategy = "method"
-    print_sudoku(sudoku.state)
-    #sudoku.steps = 1000000
-    #auto_schedule = sudoku.auto(minutes=1)
-    #print(auto_schedule)
-    #sudoku.set_schedule(auto_schedule)
-    sudoku.Tmax = 0.5
-    sudoku.Tmin = 0.05
-    sudoku.steps = 100000
-    sudoku.updates = 100
-    state, e = sudoku.anneal()
-    print("\n")
-    print_sudoku(state)
-    print("E=%f (expect -162)" % e)
-
-if __name__ == "__main__":
-    main()
-
+sudoku = Sudoku_Sq(PROBLEM)
+sudoku.copy_strategy = "method"
+#print_sudoku(sudoku.state)
+#sudoku.steps = 1000000
+#auto_schedule = sudoku.auto(minutes=1)
+#print(auto_schedule)
+#sudoku.set_schedule(auto_schedule)
+sudoku.Tmax = 0.5
+sudoku.Tmin = 0.05
+sudoku.steps = 100000
+sudoku.updates = 100
+#state, e = sudoku.anneal()
+#print("\n")
+#print_sudoku(state)
+#print("E=%f (expect -162)" % e)
 solution = solveSudoku(sudoku)
 r=asNetArray(solution)
