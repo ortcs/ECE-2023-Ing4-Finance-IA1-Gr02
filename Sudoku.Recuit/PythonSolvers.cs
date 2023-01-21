@@ -83,7 +83,7 @@ namespace Sudoku.Recuit
         protected override void InitializePythonComponents()
         {
             InstallPipModule("numpy");
-            InstallPipModule("simanneal");
+            //InstallPipModule("simanneal");
             base.InitializePythonComponents();
         }
 
@@ -113,8 +113,8 @@ namespace Sudoku.Recuit
                 string numpyConverterCode = Resources.numpy_converter_py;
                 scope.Exec(numpyConverterCode);
 
-                string recuitSolverCode = Resources.SimannealSolver_py;
-                scope.Exec(recuitSolverCode);
+                string simannealSolverCode = Resources.SimannealSolver_py;
+                scope.Exec(simannealSolverCode);
                 var result = scope.Get("r");
                 var managedResult = result.As<int[,]>().ToJaggedArray();
                 //var convertedResult = managedResult.Select(objList => objList.Select(o => o.As<int>()).ToArray()).ToArray();
