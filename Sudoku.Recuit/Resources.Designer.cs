@@ -128,5 +128,12 @@ namespace Sudoku.Recuit {
                 return ResourceManager.GetString("SelfCallSolver.py", resourceCulture);
             }
         }
+        internal static string SimannealSolver_py
+        {
+            get
+            {
+                return ResourceManager.GetString("SimannealSolver.py", resourceCulture);
+            }
+        }
     }
 }
