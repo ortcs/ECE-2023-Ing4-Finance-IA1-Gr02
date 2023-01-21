@@ -3,6 +3,8 @@ import random
 import numpy as np
 from simanneal import Annealer
 
+sudoku = np.asarray(instance)
+
 # from https://neos-guide.org/content/sudoku
 _ = 0
 PROBLEM = np.array([
@@ -100,3 +102,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+solution = solveSudoku(sudoku)
+r=asNetArray(solution)
