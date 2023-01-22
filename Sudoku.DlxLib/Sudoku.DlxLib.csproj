@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="..\Sudoku.Shared\Sudoku.Shared.csproj" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DlxLib" Version="1.3.0" />
+    <ProjectReference Include="..\Sudoku.Shared\Sudoku.Shared.csproj" />
   </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
