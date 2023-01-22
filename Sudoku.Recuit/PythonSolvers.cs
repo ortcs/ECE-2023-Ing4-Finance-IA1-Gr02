@@ -116,7 +116,7 @@ namespace Sudoku.Recuit
                 string simannealSolverCode = Resources.SimannealSolver_py;
                 scope.Exec(simannealSolverCode);
                 var result = scope.Get("r");
-                var managedResult = result.As<int[,]>().ToJaggedArray();
+                var managedResult = result.As<int[]>().ToJaggedArray(9);
                 //var convertedResult = managedResult.Select(objList => objList.Select(o => o.As<int>()).ToArray()).ToArray();
                 return new Shared.SudokuGrid() { Cells = managedResult };
             }

@@ -6,20 +6,22 @@ from simanneal import Annealer
 sudoku = np.asarray(instance)
 
 # from https://neos-guide.org/content/sudoku
-_ = 0
-PROBLEM = np.array([
-    1, _, _,  _, _, 6,  3, _, 8,
-    _, _, 2,  3, _, _,  _, 9, _,
-    _, _, _,  _, _, _,  7, 1, 6,
+#_ = 0
+#PROBLEM = np.array([
+#    1, _, _,  _, _, 6,  3, _, 8,
+#    _, _, 2,  3, _, _,  _, 9, _,
+#    _, _, _,  _, _, _,  7, 1, 6,
 
-    7, _, 8,  9, 4, _,  _, _, 2,
-    _, _, 4,  _, _, _,  9, _, _,
-    9, _, _,  _, 2, 5,  1, _, 4,
+#    7, _, 8,  9, 4, _,  _, _, 2,
+#    _, _, 4,  _, _, _,  9, _, _,
+#    9, _, _,  _, 2, 5,  1, _, 4,
 
-    6, 2, 9,  _, _, _,  _, _, _,
-    _, 4, _,  _, _, 7,  6, _, _,
-    5, _, 7,  6, _, _,  _, _, 3,
-])
+#    6, 2, 9,  _, _, _,  _, _, _,
+#    _, 4, _,  _, _, 7,  6, _, _,
+#    5, _, 7,  6, _, _,  _, _, 3,
+#])
+
+PROBLEM = sudoku.reshape(81,)
 
 def print_sudoku(state):
     border = "------+-------+------"
@@ -99,8 +101,9 @@ def solveSudoku():
     #print("\n")
     #print_sudoku(state)
     #print("E=%f (expect -162)" % e)
-    return print_sudoku(state)
+    #return print_sudoku(state)
+    return state
 
 solution = solveSudoku()
-print(solution)
-#r=asNetArray(solution)
+#print(solution)
+r=asNetArray(solution)
