@@ -11,15 +11,15 @@
 
 import numpy as np
 
-instance = [[0,0,0,0,9,4,0,3,0],
-[0,0,0,5,1,0,0,0,7],
-[0,8,9,0,0,0,0,4,0],
-[0,0,0,0,0,0,2,0,8],
-[0,6,0,2,0,1,0,5,0],
-[1,0,2,0,0,0,0,0,0],
-[0,7,0,0,0,0,5,2,0],
-[9,0,0,0,6,5,0,0,0],
-[0,4,0,9,7,0,0,0,0]]
+#instance = [[0,0,0,0,9,4,0,3,0],
+#[0,0,0,5,1,0,0,0,7],
+#[0,8,9,0,0,0,0,4,0],
+#[0,0,0,0,0,0,2,0,8],
+#[0,6,0,2,0,1,0,5,0],
+#[1,0,2,0,0,0,0,0,0],
+#[0,7,0,0,0,0,5,2,0],
+#[9,0,0,0,6,5,0,0,0],
+#[0,4,0,9,7,0,0,0,0]]
 	  
 # Affichage (inutile après avoir fait le lien avec le benchmark)
 def print_grid(tab):
@@ -106,6 +106,7 @@ def solve_sudoku(arr):
 
 	# Si on a une solution alors on affiche le résultat (test inutile une fois qu'on a raccordé au benchmark)
 if(solve_sudoku(instance)):
-	print_grid(instance)
+	#print_grid(instance)
+	r=instance
 else:
 	print ("Aucune solution trouvée")
