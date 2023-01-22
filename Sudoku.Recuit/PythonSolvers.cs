@@ -64,10 +64,10 @@ namespace Sudoku.Recuit
                 scope.Set("instance", pyCells);
 
 
-				string numpyConverterCode = Resources.numpy_converter_py;
-				scope.Exec(numpyConverterCode);
+                string numpyConverterCode = Resources.numpy_converter_py;
+                scope.Exec(numpyConverterCode);
 
-				string recuitSolverCode = Resources.RecuitSolver_py;
+                string recuitSolverCode = Resources.RecuitSolver_py;
                 scope.Exec(recuitSolverCode);
                 var result = scope.Get("r");
                 var managedResult = result.As<int[,]>().ToJaggedArray();
@@ -78,16 +78,60 @@ namespace Sudoku.Recuit
 
         }
 
+
+
         protected override void InitializePythonComponents()
         {
-			InstallPipModule("numpy");
-			//InstallPipModule("simanneal");
-			base.InitializePythonComponents();
+            InstallPipModule("numpy");
+            //InstallPipModule("simanneal");
+            base.InitializePythonComponents();
         }
 
 
 
     }
 
+    public class RecuitPythonSimannealSolver : PythonSolverBase
+    {
 
+
+        public override Shared.SudokuGrid Solve(Shared.SudokuGrid s)
+        {
+
+            //using (Py.GIL())
+            //{
+            // create a Python scope
+            using (PyModule scope = Py.CreateScope())
+            {
+                // convert the Person object to a PyObject
+                PyObject pyCells = s.Cells.ToPython();
+
+                // create a Python variable "person"
+                scope.Set("instance", pyCells);
+
+
+                string numpyConverterCode = Resources.numpy_converter_py;
+                scope.Exec(numpyConverterCode);
+
+                string simannealSolverCode = Resources.SimannealSolver_py;
+                scope.Exec(simannealSolverCode);
+                var result = scope.Get("r");
+                var managedResult = result.As<int[]>().ToJaggedArray(9);
+                //var convertedResult = managedResult.Select(objList => objList.Select(o => o.As<int>()).ToArray()).ToArray();
+                return new Shared.SudokuGrid() { Cells = managedResult };
+            }
+            //}
+
+        }
+
+
+        protected override void InitializePythonComponents()
+        {
+            InstallPipModule("numpy");
+            InstallPipModule("simanneal");
+            base.InitializePythonComponents();
+        }
+
+
+    }
 }

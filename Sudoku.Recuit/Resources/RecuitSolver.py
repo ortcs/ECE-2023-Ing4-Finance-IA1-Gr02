@@ -3,7 +3,8 @@ import numpy as np
 import math
 from random import choice
 import statistics
-
+import copy
+from simanneal import Annealer
 
 
 # sudoku instance, we use '0' for empty cells
