@@ -4,7 +4,7 @@ using Sudoku.Shared;
 
 namespace Sudoku.Backtracking
 {
-    public class BacktrackingsolverPy2 : PythonSolverBase
+    public class BacktrackingsolverPy3 : PythonSolverBase
 
     {
         public override Shared.SudokuGrid Solve(Shared.SudokuGrid s)
@@ -24,7 +24,7 @@ namespace Sudoku.Backtracking
                 scope.Set("instance", pyCells);
 
                 // the person object may now be used in Python
-                string code = Resource2.Backtracking2_py;
+                string code = Resource3.Backtracking3_py;
                 scope.Exec(code);
                 var result = scope.Get("r");
                 var managedResult = result.As<int[][]>();
