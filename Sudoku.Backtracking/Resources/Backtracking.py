@@ -112,5 +112,5 @@ if(solve_sudoku(instance)):
 else:
 	print ("Aucune solution trouvée")
 
-duration = default_timer() - start
-print("Le temps de résolution est de : ", duration, " seconds as a floating point value")
+execution = default_timer() - start
+print("Le temps de résolution est de : ", execution, " seconds as a floating point value")
