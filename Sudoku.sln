@@ -17,7 +17,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Z3Solvers", "Sudoku.Z3Solvers\Sudoku.Z3Solvers.csproj", "{A35C20E9-B1AC-47FD-9213-E84C6C37C2E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Genetic", "Sudoku.Genetic\Sudoku.Genetic.csproj", "{EBD6F9F8-9CDA-40E0-B693-B8DA2D181179}"
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Recuit", "Sudoku.Recuit\Sudoku.Recuit.csproj", "{D95A89B8-276E-4278-A4C4-F36C283BEB88}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Recuit", "Sudoku.Recuit\Sudoku.Recuit.csproj", "{96617CA2-D678-4A5D-ADD7-83F2C26BB28A}"
 EndProject

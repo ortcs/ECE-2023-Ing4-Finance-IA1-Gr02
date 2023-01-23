@@ -218,7 +218,7 @@ public class SudokuChromosomeTest: ISudokuSolver
         /// <param name="length">The number of genes for the sudoku chromosome</param>
         public SudokuPermutationsChromosome(SudokuBoard targetSudokuBoard, Dictionary<int, List<int>> extendedMask, int length) : base(targetSudokuBoard, extendedMask, length) { }
 
-        public SudokuPermutationsChromosome()
+        public SudokuPermutationsChromosomeTest()
         {
         }
 
