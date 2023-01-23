@@ -44,8 +44,7 @@ namespace Sudoku.Backtracking
             return sudok;
         }
 
-        static bool SolverBacktracking(int[,] grid, int row,
-        int col)
+        static bool SolverBacktracking(int[,] grid, int row,int col)
         {
             if (row == 9 - 1 && col == 9)
                 return true;
