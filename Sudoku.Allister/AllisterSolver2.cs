@@ -1,11 +1,10 @@
-﻿using Python.Runtime;
+using Python.Runtime;
 using System.Resources;
 using Sudoku.Shared;
 
-namespace Sudoku.Backtracking
+namespace Sudoku.Allister
 {
-    public class Backtrackingsolver1 : PythonSolverBase
-
+    public class AllisterSolver2 : PythonSolverBase
     {
         public override Shared.SudokuGrid Solve(Shared.SudokuGrid s)
         {
@@ -24,7 +23,7 @@ namespace Sudoku.Backtracking
                 scope.Set("instance", pyCells);
 
                 // the person object may now be used in Python
-                string code = Resource1.Backtracking_py;
+                string code = Resources2.Allister2_py;
                 scope.Exec(code);
                 var result = scope.Get("r");
                 var managedResult = result.As<int[][]>();
@@ -32,7 +31,6 @@ namespace Sudoku.Backtracking
                 return new Shared.SudokuGrid() { Cells = managedResult };
             }
             //}
-
         }
     }
-    }
+}
