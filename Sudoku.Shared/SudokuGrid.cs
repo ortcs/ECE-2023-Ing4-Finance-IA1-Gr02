@@ -361,5 +361,7 @@ namespace Sudoku.Shared
             return NbErrors(originalPuzzle) == 0;
         }
 
+
+
     }
 }
