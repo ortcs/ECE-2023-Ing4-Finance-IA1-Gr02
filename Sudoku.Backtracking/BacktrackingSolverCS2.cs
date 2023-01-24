@@ -1,5 +1,3 @@
-using Python.Runtime;
-using System.Resources;
 using Sudoku.Shared;
 
 
@@ -10,9 +8,7 @@ namespace Sudoku.Backtracking
     public class BackTrackingSolverCS2 : ISudokuSolver
     {
 
-        public static bool isSafe(SudokuGrid s,
-        int row, int col,
-        int num)
+        public static bool isSafe(SudokuGrid s,int row, int col,int num)
         {
 
             // Row has the unique (row-clash)
