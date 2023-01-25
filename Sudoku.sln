@@ -28,9 +28,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.TechniquesHumaines",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Backtracking", "Sudoku.Backtracking\Sudoku.Backtracking.csproj", "{F635AF45-4E18-4AC5-BCD3-5B2A1A163E81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Norvig", "Sudoku.Norvig\Sudoku.Norvig.csproj", "{C0614B4B-77E1-4012-A93F-21938E97CA25}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SudokuTools", "..\..\Sudoku.Pso\src\SudokuTools\SudokuTools.csproj", "{98AC7E61-A6C4-48CE-A016-4020E243CDD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Norvig", "Sudoku.Norvig\Sudoku.Norvig.csproj", "{C0614B4B-77E1-4012-A93F-21938E97CA25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,10 +76,6 @@ Global
 		{C0614B4B-77E1-4012-A93F-21938E97CA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0614B4B-77E1-4012-A93F-21938E97CA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0614B4B-77E1-4012-A93F-21938E97CA25}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98AC7E61-A6C4-48CE-A016-4020E243CDD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98AC7E61-A6C4-48CE-A016-4020E243CDD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98AC7E61-A6C4-48CE-A016-4020E243CDD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98AC7E61-A6C4-48CE-A016-4020E243CDD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
