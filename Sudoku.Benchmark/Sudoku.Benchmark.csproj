@@ -15,6 +15,6 @@
     <ProjectReference Include="..\Sudoku.DlxLib\Sudoku.DlxLib.csproj" />
     <ProjectReference Include="..\Sudoku.Genetic\Sudoku.Genetic.csproj" />
     <ProjectReference Include="..\Sudoku.TechniquesHumaines\Sudoku.TechniquesHumaines.csproj" />
-
+    <ProjectReference Include="..\Sudoku.Norvig\Sudoku.Norvig.csproj" />
   </ItemGroup>
 </Project>
