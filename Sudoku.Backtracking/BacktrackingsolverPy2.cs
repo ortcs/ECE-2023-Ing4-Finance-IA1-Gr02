@@ -24,7 +24,7 @@ namespace Sudoku.Backtracking
                 scope.Set("instance", pyCells);
 
                 // the person object may now be used in Python
-                string code = Resource2.Backtrackingbis_py;
+                string code = Resource2.Backtracking2_py;
                 scope.Exec(code);
                 var result = scope.Get("r");
                 var managedResult = result.As<int[][]>();

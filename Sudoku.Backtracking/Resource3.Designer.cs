@@ -22,14 +22,14 @@ namespace Sudoku.Backtracking {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resource2 {
+    internal class Resource3 {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resource2() {
+        internal Resource3() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Sudoku.Backtracking {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sudoku.Backtracking.Resource2", typeof(Resource2).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sudoku.Backtracking.Resource3", typeof(Resource3).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace Sudoku.Backtracking {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à .
         /// </summary>
-        internal static string Backtracking2_py {
+        internal static string Backtracking3_py {
             get {
-                return ResourceManager.GetString("Backtracking2.py", resourceCulture);
+                return ResourceManager.GetString("Backtracking3.py", resourceCulture);
             }
         }
     }

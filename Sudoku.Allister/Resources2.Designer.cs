@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sudoku.Backtracking {
+namespace Sudoku.Allister {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Sudoku.Backtracking {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resource2 {
+    internal class Resources2 {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resource2() {
+        internal Resources2() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Sudoku.Backtracking {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sudoku.Backtracking.Resource2", typeof(Resource2).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sudoku.Allister.Resources2", typeof(Resources2).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace Sudoku.Backtracking {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à .
         /// </summary>
-        internal static string Backtracking2_py {
+        internal static string Allister2_py {
             get {
-                return ResourceManager.GetString("Backtracking2.py", resourceCulture);
+                return ResourceManager.GetString("Allister2.py", resourceCulture);
             }
         }
     }
