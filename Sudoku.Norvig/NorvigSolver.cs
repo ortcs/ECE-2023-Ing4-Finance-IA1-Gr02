@@ -6,7 +6,7 @@ using System.Linq;
 
 
 namespace Sudoku.Norvig
-{
+    {
     public class NorvigSolver : ISudokuSolver
     {
         public SudokuGrid Solve(SudokuGrid s)
@@ -425,7 +425,7 @@ static class LinqSudokuSolver {
         Console.WriteLine("Press enter to finish");
         Console.ReadLine();
     }
-}
+        }
 
 
-}
+    }
