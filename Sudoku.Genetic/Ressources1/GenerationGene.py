@@ -2,10 +2,10 @@ from __future__ import annotations
 from typing import Callable, List
 import numpy as np
 from random import shuffle, choices, random, randint
-from solver.board import Board
+import Board
 
 
-class Generation():
+class GenerationGene():
     """
     Class holding population of chromosomes and responsible for executing
     genetic algorithm's main loop.
@@ -49,7 +49,7 @@ class Generation():
         """
         sample = [1, 2, 3, 4, 5, 6, 7, 8, 9]
         known_values = self._board.board[row_no]
-        for _ in range(Generation.SHUFFLE_NO):
+        for _ in range(GenerationGene.SHUFFLE_NO):
             shuffle(sample)
         return [known_values[i] if i > 0 else sample[i] for i in range(9)]
 
@@ -61,7 +61,7 @@ class Generation():
             with default fitness assigned.
         """
         return [np.array([self._generate_row(row_no) for row_no in range(9)],
-                         dtype=np.int8), Generation.DEFAULT_FITNESS]
+                         dtype=np.int8), GenerationGene.DEFAULT_FITNESS]
 
     def compute_chromosome_fitness(self, sample_no: int) -> None:
         """
@@ -143,7 +143,7 @@ class Generation():
         elite = []
         for chromosome_no in range(int(self._size * self._elite)):
             elite.append([self._population[chromosome_no][0],
-                          Generation.DEFAULT_FITNESS])
+                          GenerationGene.DEFAULT_FITNESS])
         return elite
 
     def _select_fittest(self) -> List:
@@ -208,6 +208,6 @@ class Generation():
                 self._crossover_func,
                 *fittest_parents,
                 self._crossover),
-                                   Generation.DEFAULT_FITNESS])
+                                   GenerationGene.DEFAULT_FITNESS])
         self._population = new_population.copy()
         return fittest_chromosome

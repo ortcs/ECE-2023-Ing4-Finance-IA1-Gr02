@@ -1,7 +1,7 @@
 from typing import Callable
 import time
-from solver.board import Board
-from solver.generation import Generation
+import Board
+import GenerationGene
 
 
 class GeneticSolver():
@@ -32,7 +32,7 @@ class GeneticSolver():
         """
         self._board = board
         self._max_generations = max_generations
-        self._generation = Generation(population_size,
+        self._generation = GenerationGene(population_size,
                                       self._board,
                                       elitism,
                                       drop_out,
