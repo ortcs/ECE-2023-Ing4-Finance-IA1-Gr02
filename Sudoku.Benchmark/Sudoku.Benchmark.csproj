@@ -7,6 +7,7 @@
     <PackageReference Include="BenchmarkDotNet" Version="0.13.4" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Sudoku.Norvig\Sudoku.Norvig.csproj" />
     <ProjectReference Include="..\Sudoku.Recuit\Sudoku.Recuit.csproj" />
     <ProjectReference Include="..\Sudoku.Allister\Sudoku.Allister.csproj" />
     <ProjectReference Include="..\Sudoku.Backtracking\Sudoku.Backtracking.csproj" />
@@ -15,6 +16,6 @@
     <ProjectReference Include="..\Sudoku.DlxLib\Sudoku.DlxLib.csproj" />
     <ProjectReference Include="..\Sudoku.Genetic\Sudoku.Genetic.csproj" />
     <ProjectReference Include="..\Sudoku.TechniquesHumaines\Sudoku.TechniquesHumaines.csproj" />
-    <ProjectReference Include="..\Sudoku.Norvig\Sudoku.Norvig.csproj" />
+
   </ItemGroup>
 </Project>
