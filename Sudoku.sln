@@ -18,7 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Z3Solvers", "Sudoku.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Genetic", "Sudoku.Genetic\Sudoku.Genetic.csproj", "{EBD6F9F8-9CDA-40E0-B693-B8DA2D181179}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Recuit", "Sudoku.Recuit\Sudoku.Recuit.csproj", "{D95A89B8-276E-4278-A4C4-F36C283BEB88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Recuit", "Sudoku.Recuit\Sudoku.Recuit.csproj", "{96617CA2-D678-4A5D-ADD7-83F2C26BB28A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.DlxLib", "Sudoku.DlxLib\Sudoku.DlxLib.csproj", "{5C30C9A9-2011-415C-8733-B2BCF4D1CDEC}"
 EndProject
@@ -52,10 +52,10 @@ Global
 		{EBD6F9F8-9CDA-40E0-B693-B8DA2D181179}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBD6F9F8-9CDA-40E0-B693-B8DA2D181179}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBD6F9F8-9CDA-40E0-B693-B8DA2D181179}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D95A89B8-276E-4278-A4C4-F36C283BEB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D95A89B8-276E-4278-A4C4-F36C283BEB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D95A89B8-276E-4278-A4C4-F36C283BEB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D95A89B8-276E-4278-A4C4-F36C283BEB88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96617CA2-D678-4A5D-ADD7-83F2C26BB28A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96617CA2-D678-4A5D-ADD7-83F2C26BB28A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96617CA2-D678-4A5D-ADD7-83F2C26BB28A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96617CA2-D678-4A5D-ADD7-83F2C26BB28A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5C30C9A9-2011-415C-8733-B2BCF4D1CDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C30C9A9-2011-415C-8733-B2BCF4D1CDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C30C9A9-2011-415C-8733-B2BCF4D1CDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
