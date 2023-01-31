@@ -39,3 +39,10 @@ class Board():
         board.append([7, 0, 3, 0, 1, 8, 0, 0, 0])
 
         self._board = board.copy()
+
+    def load_board(self, rowArray) -> None:
+        """
+        Injects external sudoku board.
+        """
+        #self._board = [cell for row in rowList for cell in row]
+        self._board = [row for row in rowArray]

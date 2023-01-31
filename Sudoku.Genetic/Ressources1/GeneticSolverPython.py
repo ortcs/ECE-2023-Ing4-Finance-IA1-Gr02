@@ -1,7 +1,7 @@
 from typing import Callable
 import time
-import Board
-import GenerationGene
+#import Board
+#import GenerationGene
 
 
 class GeneticSolver():
@@ -58,7 +58,7 @@ class GeneticSolver():
                 print(f"Solution found in {generation_no} generations!")
                 print(fittest[0])
                 print(f"Elapsed time: {run_time: .3f}s")
-                return
+                return fittest[0]
             generation_no += 1
         stop_time = time.time()
         run_time = stop_time - start_time
@@ -66,3 +66,25 @@ class GeneticSolver():
         print(f"Fitnes of best solution: {fittest[1]}")
         print(fittest[0])
         print(f"Elapsed time: {run_time: .3f}s")
+        return fittest[0]
+
+
+MAX_GENERATIONS = 1000
+POPULATION_SIZE = 400
+ELITISM_COEFF = 0.1
+DROP_OUT_COEFF = 0.5
+MUTATION_PROBABILITY = 0.2
+CROSSOVER_PROBABILITY = (1.0 - MUTATION_PROBABILITY) / 2.0
+        
+        
+board = Board()
+board.load_board(instance)
+
+algorithm = GeneticSolver(board,
+                              MAX_GENERATIONS,
+                              POPULATION_SIZE,
+                              ELITISM_COEFF,
+                              DROP_OUT_COEFF,
+                              CROSSOVER_PROBABILITY,
+                              triplets_crossover)
+r=algorithm.run()

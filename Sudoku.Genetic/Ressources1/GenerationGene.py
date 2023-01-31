@@ -2,7 +2,7 @@ from __future__ import annotations
 from typing import Callable, List
 import numpy as np
 from random import shuffle, choices, random, randint
-import Board
+#import Board
 
 
 class GenerationGene():
