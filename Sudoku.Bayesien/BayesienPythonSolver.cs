@@ -30,12 +30,14 @@ public class BayesienPythonSolver : PythonSolverBase
 			return new Shared.SudokuGrid() { Cells = managedResult };
 		}
 		//}
-
+		
 	}
 
 	protected override void InitializePythonComponents()
 	{
-		InstallPipModule("pymc3");
+		//InstallPipModule("numpy", "1.21.6", true);
+		//InstallPipModule("pymc3", "4.1.4", true);
+		InstallPipModule("pymc");
 		base.InitializePythonComponents();
 	}
 

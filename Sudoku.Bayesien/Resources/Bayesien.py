@@ -1,5 +1,5 @@
 ﻿import numpy as np
-import pymc3 as pm
+import pymc as pm
 import math
 from math import *
 
