@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
@@ -18,6 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Z3Solvers", "Sudoku.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Genetic", "Sudoku.Genetic\Sudoku.Genetic.csproj", "{EBD6F9F8-9CDA-40E0-B693-B8DA2D181179}"
 EndProject
+<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Recuit", "Sudoku.Recuit\Sudoku.Recuit.csproj", "{96617CA2-D678-4A5D-ADD7-83F2C26BB28A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.DlxLib", "Sudoku.DlxLib\Sudoku.DlxLib.csproj", "{5C30C9A9-2011-415C-8733-B2BCF4D1CDEC}"
@@ -29,6 +30,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Backtracking", "Sudoku.Backtracking\Sudoku.Backtracking.csproj", "{F635AF45-4E18-4AC5-BCD3-5B2A1A163E81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Backtracking_C", "Sudoku.Backtracking_C\Sudoku.Backtracking_C.csproj", "{5E2E8DF7-73E2-4D8F-8754-526991A6C0D0}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.ORtools", "sudoku.ORtools\sudoku.ORtools.csproj", "{0751DE7F-65CB-418E-8852-1A68FCD7A352}"
+>>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +56,7 @@ Global
 		{EBD6F9F8-9CDA-40E0-B693-B8DA2D181179}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBD6F9F8-9CDA-40E0-B693-B8DA2D181179}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBD6F9F8-9CDA-40E0-B693-B8DA2D181179}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 		{D95A89B8-276E-4278-A4C4-F36C283BEB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D95A89B8-276E-4278-A4C4-F36C283BEB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D95A89B8-276E-4278-A4C4-F36C283BEB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -76,6 +81,12 @@ Global
 		{5E2E8DF7-73E2-4D8F-8754-526991A6C0D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E2E8DF7-73E2-4D8F-8754-526991A6C0D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E2E8DF7-73E2-4D8F-8754-526991A6C0D0}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{0751DE7F-65CB-418E-8852-1A68FCD7A352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0751DE7F-65CB-418E-8852-1A68FCD7A352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0751DE7F-65CB-418E-8852-1A68FCD7A352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0751DE7F-65CB-418E-8852-1A68FCD7A352}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

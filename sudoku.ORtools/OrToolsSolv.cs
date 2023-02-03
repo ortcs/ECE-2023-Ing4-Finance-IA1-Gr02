@@ -11,7 +11,6 @@
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
-// limitations under the License.
 
 using System;
 using System.Collections;
@@ -19,35 +18,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Google.OrTools.ConstraintSolver;
+using Sudoku.Shared;
 
+namespace Sudoku.ORTools;
 
-public class SudokuORtools
+public class ORToolsSolver:ISudokuSolver
 {
 
-  /**
-   *
-   * Solves a Sudoku problem.
-   *
-   */
-  private static void Solve()
-  {
-    Solver solver = new Solver("Sudoku");
+
+
+    public SudokuGrid Solve(SudokuGrid s)
+    {
+         Solver solver = new Solver("Sudoku");
 
     int cell_size = 3;
     IEnumerable<int> CELL = Enumerable.Range(0, cell_size);
     int n = cell_size * cell_size;
     IEnumerable<int> RANGE = Enumerable.Range(0, n);
 
-    // 0 marks an unknown value
-    int[,] initial_grid = {{0, 6, 0, 0, 5, 0, 0, 2, 0},
-                           {0, 0, 0, 3, 0, 0, 0, 9, 0},
-                           {7, 0, 0, 6, 0, 0, 0, 1, 0},
-                           {0, 0, 6, 0, 3, 0, 4, 0, 0},
-                           {0, 0, 4, 0, 7, 0, 1, 0, 0},
-                           {0, 0, 5, 0, 9, 0, 8, 0, 0},
-                           {0, 4, 0, 0, 0, 1, 0, 0, 6},
-                           {0, 3, 0, 0, 0, 8, 0, 0, 0},
-                           {0, 2, 0, 0, 4, 0, 0, 5, 0}};
+    
+ int[,] initial_grid = s.Cells.To2D();
+
 
 
     //
@@ -100,29 +91,19 @@ public class SudokuORtools
 
     solver.NewSearch(db);
 
-    while (solver.NextSolution()) {
-      for(int i = 0; i < n; i++) {
+
+if (solver.NextSolution())
+{
+  for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++){
-          Console.Write("{0} ", grid[i,j].Value());
+          s.Cells[i][j]= (int)grid[i,j].Value();
         }
-        Console.WriteLine();
+        
       }
+}
 
-      Console.WriteLine();
-    }
-
-    Console.WriteLine("\nSolutions: {0}", solver.Solutions());
-    Console.WriteLine("WallTime: {0}ms", solver.WallTime());
-    Console.WriteLine("Failures: {0}", solver.Failures());
-    Console.WriteLine("Branches: {0} ", solver.Branches());
 
     solver.EndSearch();
-
-  }
-
-
-  public static void Main(String[] args)
-  {
-    Solve();
-  }
+    return s;
+    }
 }
