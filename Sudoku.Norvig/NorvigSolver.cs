@@ -16,9 +16,9 @@ namespace Sudoku.Norvig
             var solved = LinqSudokuSolver.search(linqGrid);
             for(int i=1;i<9;i++)
             {
-                for(int j=1;j<9;j++)
+                for(int c=1;c<9;c++)
                 {
-                    s.Cells[i][j]=int.Parse(solved[((char)('A'+i))+j.ToString(CultureInfo.InvariantCulture)]);
+                    s.Cells[i][c]=int.Parse(solved[((char)('A'+i))+c.ToString(CultureInfo.InvariantCulture)]);
                 }
             }
             return s;
