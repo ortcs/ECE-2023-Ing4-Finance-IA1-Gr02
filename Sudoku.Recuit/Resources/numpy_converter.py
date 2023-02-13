@@ -77,7 +77,7 @@ def asNetArray(npArray):
     Parameters
     ----------
     npArray: numpy.ndarray
-        The array to be converted
+        The array to be converted.
 
     Returns
     -------
