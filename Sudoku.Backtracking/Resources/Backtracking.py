@@ -10,7 +10,7 @@
 #           (0,4,0,9,7,0,0,0,0))
 
 import numpy as np
-
+from timeit import default_timer
 #instance = [[0,0,0,0,9,4,0,3,0],
 #[0,0,0,5,1,0,0,0,7],
 #[0,8,9,0,0,0,0,4,0],
@@ -103,10 +103,14 @@ def solve_sudoku(arr):
 			
 	# appel du backtracking	
 	return False
-
 	# Si on a une solution alors on affiche le résultat (test inutile une fois qu'on a raccordé au benchmark)
+
+start = default_timer()
 if(solve_sudoku(instance)):
 	#print_grid(instance)
 	r=instance
 else:
 	print ("Aucune solution trouvée")
+
+execution = default_timer() - start
+print("Le temps de résolution est de : ", execution, " seconds as a floating point value")

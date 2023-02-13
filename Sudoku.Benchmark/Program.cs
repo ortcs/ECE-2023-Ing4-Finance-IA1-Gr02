@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
 using BenchmarkDotNet.Configs;
-using BenchmarkDotNet.Running;
+using BenchmarkDotNet.Running; 
 //using Humanizer;
 using Sudoku.Shared;
 
